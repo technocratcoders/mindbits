@@ -8,7 +8,7 @@
 # General
 --------------------------------------------------------------*/
 * {
-  --primary: #ff7f5d;
+  --primary: #0103ff;
 }
 
 body {
@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  color: #ffa790;
+  color: #7a7aff;
   text-decoration: none;
 }
 
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #ff9f86;
+  background: #7a7aff;
   color: #fff;
 }
 
@@ -166,10 +166,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   margin: 0;
   padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 1;
-  font-weight: 500;
+  color: #fff;
+  font-weight: 600;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
+}
+
+#header .logo:hover {
+  color: var(--p);
 }
 
 #header .logo a {
@@ -700,9 +705,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Join Us
+# Write For Us
 --------------------------------------------------------------*/
-#join-us {
+#write {
   background: #fff;
   background-size: cover;
   padding: 40px 0;
@@ -710,25 +715,25 @@ section {
   margin: 10px;
 }
 
-#join-us .cta-title {
+#write .cta-title {
   color: #000;
   font-size: 28px;
   font-weight: 700;
 }
 
-#join-us .cta-text {
+#write .cta-text {
   color: #666;
 }
 
 @media (min-width: 991px) {
-  #join-us .cta-btn-container {
+  #write .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
 }
 
-#join-us .cta-btn:hover {
+#write .cta-btn:hover {
   background: var(--primary);
   border: 3px solid var(--primary);
   color: #fff;
@@ -737,14 +742,14 @@ section {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
-.event {
+.magazines {
   background: url("../img/what-we-do-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 30px 0;
   position: relative;
 }
 
-.event::before {
+.magazines::before {
   content: "";
   position: absolute;
   left: 0;
@@ -755,12 +760,12 @@ section {
   z-index: 9;
 }
 
-.event .container, .event .container-fluid {
+.magazines .container, .magazines .container-fluid {
   position: relative;
   z-index: 10;
 }
 
-.event .card {
+.magazines .card {
   border-radius: 5px;
   border: 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -768,15 +773,15 @@ section {
   cursor: pointer;
 }
 
-.event .card:hover {
+.magazines .card:hover {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
-.event .card-img-top {
+.magazines .card-img-top {
   border-radius: 5px 5px 0 0;
 }
 
-.event .card-title {
+.magazines .card-title {
   font-weight: 700;
   font-size: 30px;
   text-align: center;
@@ -786,27 +791,11 @@ section {
   color: #15222b;
 }
 
-.event .card-text {
+.magazines .card-text {
   color: #5e5e5e;
   font-size: 15px;
   text-align: center;
   margin-top: 0%;
-}
-
-.event .event-btn {
-  margin-left: 41%;
-  width: fit-content;
-}
-
-.event .btn-event:hover {
-  background: var(--primary);
-  color: #fff;
-}
-
-@media (max-width: 968px) {
-  .event .event-btn {
-    margin-left: 28%;
-  }
 }
 
 /*--------------------------------------------------------------
